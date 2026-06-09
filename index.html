@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>개인정보처리방침 — 하루감사</title>
+  <title>하루감사 · Haru Gamsa</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -11,264 +11,55 @@
       background: #f8f6f2;
       color: #333;
       line-height: 1.8;
+      text-align: center;
     }
     header {
       background: linear-gradient(135deg, #4a9aba 0%, #2d7a9a 100%);
       color: white;
-      padding: 48px 24px 36px;
-      text-align: center;
+      padding: 80px 24px 60px;
     }
-    header .emoji { font-size: 48px; margin-bottom: 12px; }
-    header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
-    header p { font-size: 14px; opacity: 0.85; }
-    .lang-toggle {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      padding: 20px;
-      background: white;
-      border-bottom: 1px solid #eee;
-    }
-    .lang-btn {
-      padding: 8px 24px;
-      border-radius: 20px;
-      border: 2px solid #4a9aba;
-      background: white;
-      color: #4a9aba;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .lang-btn.active {
-      background: #4a9aba;
-      color: white;
-    }
+    header .emoji { font-size: 64px; margin-bottom: 16px; }
+    header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    header p { font-size: 16px; opacity: 0.85; }
     .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
+      max-width: 480px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
     }
-    .section {
+    .card {
       background: white;
       border-radius: 16px;
       padding: 28px;
       margin-bottom: 16px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
-    .section h2 {
-      font-size: 16px;
-      font-weight: 700;
-      color: #2d7a9a;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .section p, .section li {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 8px;
-    }
-    .section ul { padding-left: 20px; }
-    .section li { list-style: disc; }
-    .highlight {
-      background: #f0f8ff;
-      border-left: 3px solid #4a9aba;
-      padding: 12px 16px;
-      border-radius: 0 8px 8px 0;
-      font-size: 14px;
-      color: #2d7a9a;
-      margin-top: 8px;
-    }
-    .contact-box {
-      background: linear-gradient(135deg, #e8f5fa, #d0edf7);
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      margin-top: 8px;
-    }
-    .contact-box a {
-      color: #2d7a9a;
-      font-weight: 600;
+    .card p { font-size: 15px; color: #555; margin-bottom: 16px; }
+    .privacy-link {
+      display: inline-block;
+      padding: 12px 32px;
+      background: #4a9aba;
+      color: white;
+      border-radius: 24px;
       text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
     }
-    .date {
-      text-align: center;
-      font-size: 13px;
-      color: #999;
-      margin-top: 32px;
-    }
-    [data-lang="en"] { display: none; }
+    .privacy-link:hover { background: #2d7a9a; }
   </style>
 </head>
 <body>
-
-<header>
-  <div class="emoji">🌊</div>
-  <h1>하루감사 · Haru Gamsa</h1>
-  <p>개인정보처리방침 · Privacy Policy</p>
-</header>
-
-<div class="lang-toggle">
-  <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
-  <button class="lang-btn" onclick="setLang('en')">English</button>
-</div>
-
-<div class="container">
-
-  <!-- ══════════ 한국어 ══════════ -->
-  <div data-lang="ko">
-
-    <div class="section">
-      <h2>📋 개요</h2>
-      <p>하루감사(이하 "앱")는 감사 일기를 통해 일상의 소중한 순간을 기록하는 서비스입니다. 본 방침은 앱이 수집하는 정보와 그 사용 방식을 안내합니다.</p>
-      <div class="highlight">✨ 하루감사는 사용자의 개인 감사 일기를 외부에 판매하거나 광고 목적으로 활용하지 않습니다.</div>
+  <header>
+    <div class="emoji">🌊</div>
+    <h1>하루감사 · Haru Gamsa</h1>
+    <p>감사 일기로 일상의 소중한 순간을 기록하세요</p>
+  </header>
+  <div class="container">
+    <div class="card">
+      <p>하루감사는 매일 감사한 일을 기록하며 긍정적인 습관을 만들어가는 앱입니다.</p>
+      <a href="https://haru-gamsa.com/privacy.html" class="privacy-link">
+        🔒 개인정보처리방침 · Privacy Policy
+      </a>
     </div>
-
-    <div class="section">
-      <h2>📦 수집하는 정보</h2>
-      <p><strong>앱 내 저장 (기기 내부)</strong></p>
-      <ul>
-        <li>감사 일기 내용 및 날짜</li>
-        <li>앱 설정 및 진행 현황 (누적 일수, 업적 등)</li>
-        <li>수집한 물고기·생물 정보</li>
-      </ul>
-      <p style="margin-top:12px"><strong>Firebase (클라우드 저장)</strong></p>
-      <ul>
-        <li>산호섬 커뮤니티에 사용자가 직접 공유한 감사 메시지 (익명)</li>
-        <li>공감(좋아요) 수</li>
-      </ul>
-      <div class="highlight">⚠️ 산호섬 커뮤니티 기능을 사용하지 않으면 클라우드에 어떠한 개인정보도 저장되지 않습니다.</div>
-    </div>
-
-    <div class="section">
-      <h2>🚫 수집하지 않는 정보</h2>
-      <ul>
-        <li>이름, 이메일, 전화번호 등 신원 정보</li>
-        <li>위치 정보</li>
-        <li>결제 정보</li>
-        <li>기기 고유 식별자 (광고 ID 등)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>🔒 정보의 보호</h2>
-      <p>개인 일기 데이터는 기기 내부(localStorage)에만 저장되며, 앱 외부로 전송되지 않습니다. 산호섬에 공유된 감사 메시지는 Firebase 보안 규칙에 의해 보호됩니다.</p>
-    </div>
-
-    <div class="section">
-      <h2>🌐 제3자 서비스</h2>
-      <p>앱은 다음 외부 서비스를 사용합니다:</p>
-      <ul>
-        <li><strong>Google Firebase / Firestore</strong> — 산호섬 커뮤니티 데이터 저장</li>
-      </ul>
-      <p style="margin-top:8px">해당 서비스의 개인정보처리방침은 Google의 정책을 따릅니다.</p>
-    </div>
-
-    <div class="section">
-      <h2>👶 아동 개인정보</h2>
-      <p>앱은 만 14세 미만 아동으로부터 의도적으로 개인정보를 수집하지 않습니다.</p>
-    </div>
-
-    <div class="section">
-      <h2>✏️ 방침 변경</h2>
-      <p>본 방침이 변경될 경우 앱 업데이트 시 공지합니다. 변경 후 앱을 계속 사용하시면 변경된 방침에 동의하신 것으로 간주합니다.</p>
-    </div>
-
-    <div class="section">
-      <h2>📬 문의</h2>
-      <div class="contact-box">
-        <p>개인정보 관련 문의는 아래로 연락해 주세요.</p>
-        <p style="margin-top:8px"><a href="mailto:ktij5@naver.com">ktij5@naver.com</a></p>
-      </div>
-    </div>
-
-  </div><!-- /ko -->
-
-  <!-- ══════════ English ══════════ -->
-  <div data-lang="en">
-
-    <div class="section">
-      <h2>📋 Overview</h2>
-      <p>Haru Gamsa ("the App") is a gratitude journaling service that helps you record precious moments of daily life. This policy explains what information the App collects and how it is used.</p>
-      <div class="highlight">✨ Haru Gamsa never sells your personal gratitude entries or uses them for advertising purposes.</div>
-    </div>
-
-    <div class="section">
-      <h2>📦 Information We Collect</h2>
-      <p><strong>Stored on Device (Local)</strong></p>
-      <ul>
-        <li>Gratitude journal entries and dates</li>
-        <li>App settings and progress (cumulative days, achievements, etc.)</li>
-        <li>Collected sea creatures information</li>
-      </ul>
-      <p style="margin-top:12px"><strong>Firebase (Cloud)</strong></p>
-      <ul>
-        <li>Gratitude messages voluntarily shared to the Coral Island community (anonymous)</li>
-        <li>Number of likes (reactions)</li>
-      </ul>
-      <div class="highlight">⚠️ If you do not use the Coral Island community feature, no personal data is stored in the cloud.</div>
-    </div>
-
-    <div class="section">
-      <h2>🚫 Information We Do NOT Collect</h2>
-      <ul>
-        <li>Name, email, phone number, or any identity information</li>
-        <li>Location data</li>
-        <li>Payment information</li>
-        <li>Device identifiers (advertising IDs, etc.)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>🔒 Data Security</h2>
-      <p>Personal journal data is stored only on your device (localStorage) and is never transmitted externally. Messages shared on Coral Island are protected by Firebase security rules.</p>
-    </div>
-
-    <div class="section">
-      <h2>🌐 Third-Party Services</h2>
-      <p>The App uses the following external service:</p>
-      <ul>
-        <li><strong>Google Firebase / Firestore</strong> — Stores Coral Island community data</li>
-      </ul>
-      <p style="margin-top:8px">This service follows Google's privacy policy.</p>
-    </div>
-
-    <div class="section">
-      <h2>👶 Children's Privacy</h2>
-      <p>The App does not knowingly collect personal information from children under the age of 13.</p>
-    </div>
-
-    <div class="section">
-      <h2>✏️ Changes to This Policy</h2>
-      <p>If this policy changes, we will notify users via an app update. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
-    </div>
-
-    <div class="section">
-      <h2>📬 Contact</h2>
-      <div class="contact-box">
-        <p>For privacy-related inquiries, please contact us at:</p>
-        <p style="margin-top:8px"><a href="mailto:ktij5@naver.com">ktij5@naver.com</a></p>
-      </div>
-    </div>
-
-  </div><!-- /en -->
-
-  <p class="date">시행일 · Effective Date: 2026년 5월 1일 · May 1, 2026</p>
-
-</div>
-
-<script>
-  function setLang(lang) {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.style.display = el.dataset.lang === lang ? 'block' : 'none';
-    });
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent.trim() === (lang === 'ko' ? '한국어' : 'English'));
-    });
-  }
-</script>
-
+  </div>
 </body>
 </html>
